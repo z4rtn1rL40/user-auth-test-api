@@ -1,0 +1,4 @@
+export const jwtConstants = {
+  secret:
+    'NEVER USE THIS KINDA VALUES, GENERATE SHA-256 KEY INSTEAD OR ANY OTHER HARD TO CRACK VALUE',
+};
