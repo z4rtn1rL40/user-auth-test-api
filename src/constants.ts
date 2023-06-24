@@ -1,2 +1,2 @@
-export const USER_AUTH_HEADER = 'x_auth_token';
-export const HOUR_IN_SECONDS = 3600;
+export const USERNAME_MIN_LENGTH = 3;
+export const PASSWORD_MIN_LENGTH = 8;

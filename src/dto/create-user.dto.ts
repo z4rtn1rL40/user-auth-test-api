@@ -1,13 +1,13 @@
 import { IsEmail, IsNotEmpty, MinLength } from 'class-validator';
+import { PASSWORD_MIN_LENGTH, USERNAME_MIN_LENGTH } from '../constants';
 
 export class CreateUserDto {
   @IsNotEmpty()
-  // TODO: Move to constants
-  @MinLength(3)
+  @MinLength(USERNAME_MIN_LENGTH)
   username: string;
 
   @IsNotEmpty()
-  @MinLength(8)
+  @MinLength(PASSWORD_MIN_LENGTH)
   password: string;
 
   @IsNotEmpty()
